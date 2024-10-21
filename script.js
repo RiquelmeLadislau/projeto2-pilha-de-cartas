@@ -18,18 +18,18 @@ do {
             newCard = prompt(`Qual o nome da carta a ser adicionado?`)
             card.unshift(newCard)
             break
-        case '2'
+        case '2':
         if (card.length === 0) {
-            alert('Impossível retirar carta que não existe.')
+            alert('Impossível retirar carta que não existe.');
         } else {
             removeCard = card.shift()
             alert(removeCard) 
         }
         break
-    case '3':
+        case '3':
         alert('Encerrando programa...')
         break
-    default:
+        default:
         alert('Opção inválida.')  
         }
     }while(menu !== '3')
